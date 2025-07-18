@@ -174,7 +174,7 @@ p {
 .landing {
   position: relative;
   height: 100vh;
-  background-image: url('../images/grandmaoverlay.jpg');
+  background-image: url('grandmaoverlay.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 75%; /* Adjust vertical positioning here */
