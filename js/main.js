@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* ==========================================
    OPTIONAL PAGE TRANSITIONS
-========================================== */
+========================================== 
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -84,5 +84,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-});
+}); */
 
