@@ -1,6 +1,6 @@
 /* ==========================================
    PAGE FLASH ANIMATION
-========================================== */
+========================================== 
 
 window.addEventListener("load", () => {
 
@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
         flash.classList.add("flash");
     }
 
-});
+}); */
 
 
 /* ==========================================
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 window.location = href;
 
-            }
+            } 
 
         });
 
