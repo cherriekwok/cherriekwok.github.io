@@ -1,0 +1,424 @@
+<html lang="en">
+<style type="text/css">
+@keyframes rwdcur142979 {
+0%,11.011111111111%,100% {cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFWklEQVRYhb2XXWxURRTHf727BbqFWoEUQwpuKUsbiBrBGMD4RNJ0iA9NCH4U1/uEQYPEqAnRUHzAJwmIIoSY+HBpaNSkscaHQ2rUB540mqhJK2BDSlMalmDTtHRb9uNeH2Zm9+52+0FCPMlNu3PPzP8/Z875n7mRJ1sjt1Y+smnFzp07s4lEIpNIJLJDQ0N5/ierAoLntlfl/k23nG9qavoaGAImAB9wzOMDORHxHzYBB+DSySC6JnbtzeHh4VeAzcBaYDXQAKwH6oFlDxscIArw+Hr48qMg+trRq4eGhyEej38HZICYiIhS6mkgB8zOt5BSyjEkLdEMkFksag7A/QysfRROHQ2iy7l6aGRkJAnsFhExfhuBOgMyB1gptQIdrc3AVopRXDRqUYD0DEzPQH0dHDsURI+f/fvV27eX/RryiwMjwG1MFEI7rjdgcSAuImfN+11AmgWiViAwPQPTaZiahlgNHNzvO59d/PNZ6yQinyql9gAxpVRmIeCQ1dn1l0Tg+k04erLKvzYcmDD7Tm0t3Ljosm6fZ6MwYZ46oNECZ6f0jJ4kuH2FtWfReUNZxGIGNwekowD/3IRjn1Tlqldu61FqwxVgBZAQkSMhsk+Z8TSwWkROAVhwgD07gD5QSh1AH1fG5EfMkK5HV1cUmARGowAfnK7K5atbL8Q3bPgWGDOOPkB20MPrAJAjod2ZsVJr7AKl1EFg2OywwQAXStoSN1HZFW3eGBlL+/FzW+Lxn4AbJsQN6Mznx9+hs1tP6DQTx/tdVrd5BeDxfn1MSqk30EKWQx/ZHNBUr55bvQqAjdEt29qeN7u9Z8LiUzwr2pMuUAQDSsABC96FrhSAVhEpOFlQE7uSoDnokI8BEyKSQZ+PDdscsAXMRx9dq4h4qV6X7JTOkUprpHpdRORUVXjQZGoD8IyIfF/KfH6rXgVKqS+AeyLyzoPMK1e2ZRRrm8vdcxcZ73fpSeq/Zbt53YJbv7BP+Rr2XblQLAPqbW3nojOQqylxqNt7AXefh4dHZxtMtwHvzb/LSiSMrlQkAEY8ptugtr+msIgNaTRXU6j96bbiJK9Di1B20KN6qwbNDno0dhV9lFLvAuNKqTRaT+6WE8gYhwP1IpeyQOoMrHu7yFj/1v/X9peSAK0Fqd7iLpVSp4EBYBS4g660jNloplIS1gGbgN0vL5eze3ZoLQCtdBbcRiZsFnT0REGUvgF+AX5Da8xdylp0SRKaF5NoGR356r46b0PYnnSp3uoWkjB1hoqmlPpLR8FFRF40IuQDaRGZXdKtSinVoJTaCwTZKf14HQSpXjfwOopj2SmC0ROlPkCglLqS6nWDVK9rf7+glHqsEtZ87dJ2LnqSekDLsc78nmRRnsNHErJYWQLaDrg4AZMHMbSq6cyeKvXp7MZqecm7zm4gCW6fbGd3MRcoJt3iBNA7L0hxObi1+cat2cQ1Nm5ILIlADNPvtaotuReUmG3dobtBupLfnEsmxQg8sNmyHD1RAD8IDKLrf8kRmLPoYo0lrAe6fYNSd9434MPA5HzlVykCvmWbHfTmAJQDz/fOAI8tBD4fgRz6LnemsUt3xOygR09SZ374sQTDlh30rCJOosVnQeEpl2LQ94HtIiK2tYZ0/WPglnFfIyLHQTciK9muvpR+DvwA/IE+/xz623IOgfIcCH+MlrRNc+W6bhYE/aX0FtDSnmw4fLnboz3pMrrDo7FLDiulfkZXVAx9RfftuosR8FtaWl5qbm7u831/ZRAEjuM4s47jPBGJRJocx8kABEHg5PP5WD6fr1u375ye3VcknEgk9kcikYlIJJIeGBj4MLyxsP0HCChl0FMDeRUAAAAASUVORK5CYII=) 0 0, auto;}
+11.111111111111%,22.122222222222% {cursor:url(data:image/png;base64,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) 0 0, auto;}
+22.222222222222%,33.233333333333% {cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFcklEQVRYhZ2Xf2hVZRjHP+fuh3ekY8poI2WbyzbbMqMgymgQxfIpotGqP2br7g+DKATRwiT8pxEWaSpiGUp0GUzCFivDRwQNKtAoiVWuzURXzbENu4y7n+7Onf5433Pvucd778wHXs4957zv+/0+z33e7/Mc597VeVcmE1UHampqTgOXgDFVnRWREFAIlAClwO1AsX0GMAVcBQaBq6o6wy2YA7iP3O/M/TtV+9HKlSs/By4CcSBsQauBVaq6P9MGIrIWGFDV+C0TGDgFG9505mLTqw9WVVUdBUYx3taoagfASFcEgLLmaJDAw3b+FJAPzAGz9n5WVecXJOD+Af2X4eVtztzE9bs/raysPAOUqOoeD9gzj4CIfAj0A8PAvAUvtOBjwJAlFs9FIh/g2iyULoXd29z8Te/2bRwaKqju6el5Igf4CSCEzQ1VbQ9uLCKP2ShMWVJZzY2dxf3rNO5vX+N+sQ+3flXo+s8Hm91oE260CRduHCNdETcxTnJkmiciVSISzgXuAO4/38L4JIyNm9F/Gb76Hg5/ApUV6QtiJyOc6IjS0pH+vGBJ0vOtpMI/ijkpY2TJBwdw+45D32XY9oFD/4CbfPnqRti/Jx18WWN6EsZORihrjiIi2zHHeALz14YxCTlhiYxhTldacjqAe+xj2P5haL5g8dqz5eXlc6rakBjP7Pn61nQSBUtARN4BfrEgy4AVqrrPmxOISsxPxgHcNXc5c07Rmm+WL18+pqpt09PT5M8VpYEXP3WQoqIiok2khd8SeB0YAIpV9QiA54AXoQxkhoEh7qzIu1JbW/u+iLyFL4H8CZYYz558mGR7TUReyvQ+2z523fOhmvrGR6urq7ssKwbbDfvOVsPes8S4GV74JxvNe3tUPcle0Lx9RroiqOrRkAUetCFh8XEzsaUDTnRE6WyFkb3pm0w2muuiXcnQLsYoZzLsfvKZzHMkZItIDBgSkU0lZ1Ket3SYUbY5ffFtJ8312htJkKXAoiCIRyQXmZC9zmLO60X/4kzmbegDR1W3kKqSSUv0RpMJmI2I4/2wilUNrFPVQ0EZzmVWB94DCg+t0y0FdUlt+A7oA/7EnP9iVd3pL2z5FjyErQvAjIh8BrQtBBwQpTAwtWIHjHSZJCtrjjYADSLyLCbPwiISKWuOJhc6FrwYU/trgPtUtT0xnv1vCIJ3tkKkG0RkF1Cqqm1+L0VEgN9tFEqBOzB/WTzfel6CaTqOBUH8JIIy3NlKsCZUqOqLg7Y2WvDD1sF8S+BvTL6Z3kFEwiKyGisiI12RjELkr3pBYfFXQxH5EXAH21PDPl+VqTKGMM3EjIg0B7udTNbSYTzPZqr6YLQJTp0zY8UOEJGngRmLlWZeCzUGXBKRV8qao4duhoRXfv1FK9qU+h3pNlcR2YARuwmLlWaOneQlYh3QoKo7g9Uwl3mV8vEHjMd2z00YXblEjtbMrwMhoAJ4SFWPjHTdWPszAQet7fDoLuAnoJcFmhFInX1UdV5E4pZtGkCmJiSHnQd+xZTnBbvi/MD9FBATka2J3ujugrrIzQAmLdEbBWQUiN3sh0qQQLKlLqiL2A2TmfwlcAGY9HfBXuJZIdpr97gh2bJZyH9jwxUHhsqao5w6lwJR1eeAHuAHEXnGdjasbzXRGWwHVd2MUbigY1kt08QpYFhEXoh061G6095dxGg6wKh3bEe6UtHif3gP6afAIxTGSHM5RrNLMAKS/BDFiEoxUAXco6oHfPs8iTkBw8CcquYk4I+A9zXs1fW49WbY3s/aEbbrQphG5oKItNrncTuw+8yTQf1yEQjV19e/7bpuoeu6oWyL/Gtc1w3Z+TiOg+M4M3l5eTPnz5/fQUrqs9p/A//7xhkjN28AAAAASUVORK5CYII=) 0 0, auto;}
+33.333333333333%,44.344444444444% {cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCElEQVRYheVXP2gTURj/JTSLoct1uKXg4GTRKu3kIAgtQbdItkJ4QzJXB5cORaRDR7GrdHgEOnm1KLUSrooU/DN0KEIRpKhQag9MVMKpTYbP4d073l3eu8sZnfzBB5e7d9/v9/15373gwoeHJ8WnK/NIBxlsOFgtly4fb1KCCAJAnsPIc1iE3Gq5QwvIA0DDX8fUxTP3NCLIcxg8h+nezbXHZnN/RcDp7iruf13H+agIksRnr1QBAHaFh+RxoRobDFbLpV97oC+vQDtvajT1WZTDcxjxMoiX9bX3HEa9DkIzrBtMQPs16NMz0NtHoAfNGp072qQX7+sRAmlSWPx+5sgD5AHA/wn4P4COD5z6uIrazjrqxet4eVyPLLa7LqwSx1xDXANAu8lQGAUgypK9J6yWS++egDa26zThbZHVckObPHD6Io+nPiHqwbJitVx6/LxOk0ebVNxamQf0aVdrnSKAVB/xrasVoJLHHaRZzGlfhhJ6hQAgP/a90z3YO7jhX5tfAYDDJaDXAdaqor4m+CXx3DAjjOh1hAXvUd9+/nYJKDbFD7vr4m5tFjPTgH0zSi5xcovBrnDph1RBVokjCYVRfdeS57DUl/2SIAdgFKBC568wGmxDQPSC+jCefnXbtZssJJfEOtLePg+np3wvDtO+NUaiQ0CSA4DDJVBhgkXumXzbFW4eHMH2SYRMqzKI+ggC6L4dAMwloLQeUJ/zcsRpThInZFFOzdyIvBN8WiNRWyUeqVtc1FoVmGv0OafDJXGRUAYtIocO0yDRTcLY11CKCC0emIq8cp1TambEXENEnhQILwPbu8LGF4Vv02JtlwJiWiUhaLxwXVwU20jkCDGiudfXCzqoAkWfcMxMhxGnEqctGmga6gaLMhUHgi4DfQRxIUkfqawwqpUTLQt6+xzji9lORcYMFCYYevsick0nhz0SDCHZdJmPZHnTA7vCsb0bIVEbMzz/Xa2KLAXDZ/h/SjEMcswmz2GpA8eEof/ZSBH/wOd/AmO6FhYW7vyJw+Xl5dtZ1v8Gy4xPDA3q5bsAAAAASUVORK5CYII=) 0 0, auto;}
+44.444444444444%,55.455555555556% {cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCElEQVRYheVXP2gTURj/JTSLoct1uKXg4GTRKu3kIAgtQbdItkJ4QzJXB5cORaRDR7GrdHgEOnm1KLUSrooU/DN0KEIRpKhQag9MVMKpTYbP4d073l3eu8sZnfzBB5e7d9/v9/15373gwoeHJ8WnK/NIBxlsOFgtly4fb1KCCAJAnsPIc1iE3Gq5QwvIA0DDX8fUxTP3NCLIcxg8h+nezbXHZnN/RcDp7iruf13H+agIksRnr1QBAHaFh+RxoRobDFbLpV97oC+vQDtvajT1WZTDcxjxMoiX9bX3HEa9DkIzrBtMQPs16NMz0NtHoAfNGp072qQX7+sRAmlSWPx+5sgD5AHA/wn4P4COD5z6uIrazjrqxet4eVyPLLa7LqwSx1xDXANAu8lQGAUgypK9J6yWS++egDa26zThbZHVckObPHD6Io+nPiHqwbJitVx6/LxOk0ebVNxamQf0aVdrnSKAVB/xrasVoJLHHaRZzGlfhhJ6hQAgP/a90z3YO7jhX5tfAYDDJaDXAdaqor4m+CXx3DAjjOh1hAXvUd9+/nYJKDbFD7vr4m5tFjPTgH0zSi5xcovBrnDph1RBVokjCYVRfdeS57DUl/2SIAdgFKBC568wGmxDQPSC+jCefnXbtZssJJfEOtLePg+np3wvDtO+NUaiQ0CSA4DDJVBhgkXumXzbFW4eHMH2SYRMqzKI+ggC6L4dAMwloLQeUJ/zcsRpThInZFFOzdyIvBN8WiNRWyUeqVtc1FoVmGv0OafDJXGRUAYtIocO0yDRTcLY11CKCC0emIq8cp1TambEXENEnhQILwPbu8LGF4Vv02JtlwJiWiUhaLxwXVwU20jkCDGiudfXCzqoAkWfcMxMhxGnEqctGmga6gaLMhUHgi4DfQRxIUkfqawwqpUTLQt6+xzji9lORcYMFCYYevsick0nhz0SDCHZdJmPZHnTA7vCsb0bIVEbMzz/Xa2KLAXDZ/h/SjEMcswmz2GpA8eEof/ZSBH/wOd/AmO6FhYW7vyJw+Xl5dtZ1v8Gy4xPDA3q5bsAAAAASUVORK5CYII=) 0 0, auto;}
+55.555555555556%,66.566666666667% {cursor:url(data:image/png;base64,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) 0 0, auto;}
+66.666666666667%,77.677777777778% {cursor:url(data:image/png;base64,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) 0 0, auto;}
+77.777777777778%,88.788888888889% {cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFgUlEQVRYhb2XX2gcVRTGf/sna5ImscbSlTTWrW1qTFChVYyKIlSC16dCUDFtGERaJFCtRKmIQaT6IBK1VCW2CA5pKz4UIj6cEFofRNSiRSk0NTXoNtSQRLuE/Nmuu5sdH+6dyezsLqaCHriwM/fO/b7znXPPPRu5szXye931t1Z3dHTkWlpasi0tLbmJiYll/icLAc4D20L5K+nbPty0adNnQBJIm/kCkAWyIlL4LwhEAY6/7UR3vTTem0yGwolE4nNgzszngT/NyFzr5kqpsMEIo53JBx0JA9zSBB+/4UTroz8/Ozk52QM8JCLfi8iPQDNQ++/8IwrEzPcx81yygL+ysO4GGDjgRPe9eWH39HRsi2/NOnRYKprxNGYGmLAZB2NnjvVduXf3wI1oRYssBDip72AhDfOLMP4b9B+CC796mz8NfAUk/fL5QGuBBmAtUG2AZ9Fhw8w1oEOQRofXy6kowNJVWErDwhLU1sDeJ+GQDckpABrNBjEg4wNea9RZb0aTiAwYcvcZInkz12yw5oyaXk55BC5eggNvhxhPOp48a9aAiAwopXYADUopfMAJICEih+2dYA0XKdsIpIw6bSJyPLcAVfUeubRLIAzwyyV49d1Q/rqGO4aVUp8AzJy0GH/Z2zABbAFagbuBh0XkCxE5nFuA7iGwdxYRiBmvt4nI8ZmTln9uo3Em7Cnwyjuh/HJV6+DNGzacAZrclVVtFmAD3GU8x5V55qRFY6ft7bpjOzAMSql9hkCbiBwOrjPELgLTQCa6eWNkKl1IfLA1kfgSX5bmxmyq2izjmTznSux6GtiU5n5QSvUBi0CziAwEwWdOWsS7bDektUAmurW980F0hi6iky0PcPosdO+36e7UH3cDqdESb0iNWsS7bJRSB9BxbywHHiBd7aofBqbMmENnbgF0XIMW3BBwwd83366vBO6SNbboOhoWkYyIZEXEkz+QNKuxtcBmEXnr8sESMO/ZkN2Fjn8afKUxUFjK2ome8sqIyO5yxP0kDPgeYAxdqLJgjqGxGDoHGkeGKssX9Gy1aimlngfOoQvRvFsJgwTqRGTgiU+vlgA1PDaINQwuuaVOPfyWG7NLnuNdeqA9n/SDewSM/LWYs15TU1OSRDU1NQA82mOVAJs9ks39KyRyY7Z7NI8opZ4yns+VXMcGvAG4CWhSSp3ILcDMe3q4dvkg5Bb0SVgzWkpARBIAe75RycD7vayU3pKmxr2v1wOtIvIR6GTbsR3i+/VvKE6+1KgFL+rfI0M2uYWVuap6Sdx+7BQXALBRSh1Bq1tNccgBCCmlGtBl81s3oUzMVpVgwVBV1VP0rbuXUuoe4KKIzPvXlzC6FitXbAxYsowTJd2Q+zILpJRSu+JdtndzaVntotNQCdA1N1wiknALkjn/fegcyFYiMAuMKaX2xLvso6vxshy4pW/D5NH7dUL6jqW/1BeZG4IMujxOKKX6V4UYMDdJRSRx+qy+zE6f9aanCJx/P4GoGXnDcvafwOLZUyXvUqNWUVNiDXuKPI6v9pcj4Hauf6Almgct6Yme0tILMBN7pAQcTFOCB9yndA93Dl/tL0egAGRN2+x2rVjDesORIbssiXIEdQeFe+l8DfxEmfIbJJA37FzwadNWAbr0Bi+noMeumYx/BvgB3XbNmuu+4t86VwH/ggy+PBgZsrGGdYGpql8pz9aw9jjeZXuXjlLqBWAC3Xbn0aW+Ejaw8r8thi6V1YZMSinV19yvG1DALak098te06h6x8xcOv0GPGU+ifmcq6hASCkVBarb29tfdxwn5jhOtFAoxJaXl+sKhUKd4zjRUCiUD4VCeQAzX+s4TvXg4GAHQG9v76lIJDIXiUTmw+Fw1qzPnj9//jUg4++2gvY3BceJmgYofLgAAAAASUVORK5CYII=) 0 0, auto;}
+88.888888888889%,99.9% {cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFV0lEQVRYhb2Wb2hVdRjHP+fec+ea21pLnGzL1NwSVwZJMI3qhSB73gkSkXS5USkykAwFoVwR2itbJf1hGAWHkRCy2IvwEane9I8oMUJtzlFrzLHJGmNrf7y7u6cXv9/ZOffsbuYLe+Cys3Oe3/N9/n5/T3LLpuT18rs3lDY3N881NDRkGxoa5vr6+ub5n8QB/McfdXJ/Tz/40fr16z8H+oFp+z0PZIGsqubvhAMJgM9O+O69ZVdb+/v7nwU2AxvtbwOwCii5E+ALDtxfC58c990Kt2f/wMBAGnhSVX9W1YtAPVB2pxxwAW5mYdU90H7Edw+89ftzw8MlGyM6qzBlWVJEJIHJUpm1mcOU8ZalcwGmZ2BqBqoq4ej+fKLt5MXtMQfKRCQRNRYDrQSqgGprcwIYBEaB2Zh+UM4skHXBgE9Nw+QUlN0F+56Bkx70D4E1WmkPzkYMVVnnVttfraq2RxzcCkyISDamX27BbwCjDuD3nIWeP+HICYer/f5C6CtXwtQUiMgO4JKNLDC0Dlinqu97uyDTvags2whLV6Af+d7rAlz7C46+6+RWVD78pUjduKo+P9KVYe6KR30b2MOzmLrWRw3NTVqIdOiEiOwFSoG1NjsF+qkKsN+GXYBX33Fy86lNHffV1f0E1AZRpDZnAA/gERs5QZpHujJU7/QWIt6xFegGETlkM7UGWK2qJ4vp20B6nQfWJq+TWvdhY2PjN5ju3aSqnYPHjAPnOs2hIDpvl/m7p7Mw5akKEJHXMI1XugwwY+cz1Oz2EJEdbmPTzicwjPcPptlyAF9fgD0HPfbstID2YNxYBPw4pkx1qvp6CLxYP2Kj0gWGrAN5TN3yxSKMHYyDfwDcVNX2wWOQeqm4o9EMWMdyCVWdVdWsquYChZGuzJKH42Kb0AVqIOibpSVIv5VRN3iKEUtROZ0unhlMl7cMHlse2EyVh4i8jBnrQTeiU4LpgepznWHtixmKp1dVW6AwepPmUIKoRSQD9AADwHjcgXJVbf9iZoaxs/sLgMbOZ8h0e3gY56asgzcPL9STuStegRMRHgmi7gX+wLDghKrmnUBZRCqBLar6LUQIJiKpCtMfK94uzEDVj+FzML4BuIh8CnwP/Ia5H8aJXFIJC57ANJIrIsfnJmHkPfOLytykmYSV58N3JgOh7P1BhiJNhqq+gOGGYWDMNv3CpeZa8EoMc60Bqk6nDbPVHDSNB+H/YOt72Dyf6/QKspWq0FoIWVRETmEauzQIOCqOiAScvUVVz0Q//pdxXIobgrOR5nsM6FXViahuMHrVqnpmpCtzWxywHNkEwBF7bjG9oi8haEKvYJyWAwRTroy5kHo/3q6NgSP2gprF7AGLHMgCYyLydM1u70xc4VagATCE4KrayHYzhlaGsN0fP+tEmnA18BCwTVUPFxvDW4m954Hw1rROPQVcUtWx+Jlgz5vAMFMvcO32oc1kBKDBhmTBn8aM4HSxcy6AdWJWREYxLLWQ1pb08jdbAA7hUpIJF5MrhMy3KP2weC6zmGyQ6TYGz3V6i3g9cPB0upDzAxq2K9l3wK+YzE4stZ7HHZgGbojIgeBFSzqzyIloxMHGBAsd/yLwC6acN+LMFxdXRMDSMIatctgygAHIdAPdBshwvcnQSDoDF7wo778C9GGoNwckRCSvqkvh4xKSUSnhRjQmIofq2wr2/FMA9W26L3r7mXcgIm0WPOj0EsJNa8kMOCLiAqVNTU1v+r5f4vu+m8/nS+bn58vz+Xy57/uu4zg5x3FyAPZ7me/7pR0dHc0Ara2tXyWTyfFkMjmRSCSyVj97+fLlN4DZ6LYVl38B/811Vo0Kp3IAAAAASUVORK5CYII=) 0 0, auto;}
+}
+body{
+animation:rwdcur142979 0.9s linear infinite forwards;
+}
+
+</style>
+
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Digital Humanities | Cherrie Kwok</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&family=Raleway:wght@300;400;500;600&family=Caveat:wght@400;700&family=Bitcount+Grid+Single:wght@100..900&family=Cutive+Mono&family=Cute+Font&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body class="digital-humanities">
+
+<div id="flash"></div>
+
+<header class="site-header">
+
+<div class="container nav-wrap">
+
+<a href="index.html"
+   class="logo">
+<span style="font-family:Bitcount Grid Single;">
+
+Cherrie Kwok
+</span>
+</a>
+
+<button class="menu-toggle">
+☰
+</button>
+
+<nav>
+<span style="font-family:Bitcount Grid Single;">
+<a href="about.html">
+About
+</a>
+
+<a href="research.html">
+Research
+</a>
+
+<a href="teaching.html">
+Teaching
+</a>
+
+<a href="digital-humanities.html">
+Digital Humanities
+</a>
+</span>
+</nav>
+
+</div>
+
+</header>
+
+<main class="container">
+
+<section class="page-header">
+
+<h1>
+Digital Humanities
+</h1>
+
+
+<div class="divider"></div>
+
+</section>
+
+<p>
+    Alongside my interest in books and the 19th century past, in my childhood I became interested in digital worlds through gaming, especially the MMORPGs of the early 2000s (eg. <i>Runescape, Maplestory, Unreal Tournament,</i> etc) and the Nintendo GameBoy Classic (<i>Pokémon</i> was my first game). My digital interests continue to shape my work today. I like coding digital micro-projects to advance research, teaching, or the public humanities. I also like sci-fi books and films that explore future worlds, alternate realities, and new technologies, ranging from AI to time travel. Some of my favorites are <i>Black Mirror's</i> "San Junipero," "Bête Noire," "White Bear," and "Striking Vipers"; R.F. Kuang's <i>Babel, Or The Necessity of Violence</i>; Kogonada's <i>After Yang</i>; Liu Cixin / 刘慈欣's trilogy <i>The Three-Body Problem / 三体</i> (with a special interest in <i>The Dark Forest</i> book); <i>The Man in the High Castle</i> TV series; and the <i>Matrix</i> series. Check out some of my projects below. 
+</p>
+
+<br>
+
+<section class="card-grid">
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/duval.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  	<b>Jeanne Duval Archive</b>. Role: Director. <span style="color:#9899A6;">(Research)</span> <span style="color:#9899A6;">(Public Humanities)</span>
+
+</p>
+  
+<p>
+   
+   A digital archive that collects and contextualizes contemporary and postcolonial art and literature about Jeanne Duval—a creole Haitian woman in the 19th century who was disregarded by academia due to her fraught relationships with white and male artists and writers in Britain and France. Includes multiple genres (novels, poems, plays, films, paintings, photography, songs, etc) and languages (English, French, Spanish, Italian, Cantonese, Russian, and more). 
+
+</p>
+
+<p> 
+
+    <span style="color:#9899A6;"> (Note: the archive has completed its data collection phase. It is anticipated to soft-launch on Omeka in Spring 2027.) </span>
+
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/cute.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  <b>Meet Cutes</b>. Role: Director. <span style="color:#9899A6;">(Teaching)</span>
+
+</p>
+
+<p> 
+   
+   Playing with the slang phrase <a href="https://en.wikipedia.org/wiki/Meet_cute">"Meet Cute"</a> (when two people meet for the first time in an adorable way), <i>Meet Cutes</i> shares student work from my ENGL 2475 Global Asian Aesthetics course at the University of Iowa. One category we examine is "cuteness." Here, students draw from research in Cute Studies and their lived experiences to introduce a carefully curated set of objects, explain why they find these objects "cute," and analyze how they possess unique cultural power. 
+
+</p>
+
+<p>
+	<span style="color:#9899A6;"> (Note: the first edition of the website will launch in Fall 2026.)</span> 
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/brontegram.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  <b>Brontëgram</b>. Role: Director. <span style="color:#9899A6;">(Teaching)</span>
+
+</p>
+
+<p> 
+   What if the characters in 19th century novels also had social media? <i>Brontëgram</i> shares student work that reimagines app profiles (eg. Tinder, Reddit, etc) for the characters in the novels of my ENGL 3339 Global 19th Century Literature course at the University of Iowa. It also offers resources for instructors and students who want to adapt the assignment for their own classrooms. In Fall 2025, we examined Charlotte Brontë's <i>Jane Eyre</i>. In Fall 2026, we will examine Emily Brontë's <i>Wuthering Heights</i>.
+
+</p>
+
+<p>
+	<span style="color:#9899A6;"> (Note: a revised edition of the website will launch in Fall 2026.)</span> 
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/digitaldecadence.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+<b>Special Issue</b> in <i>Volupté: An Interdisciplinary Journal of Decadence Studies</i>. Role: Guest Co-Editor (with Sandra Leonard). <span style="color:#9899A6;">(Research)</span>
+
+</p>
+
+<p>
+   I am guest co-editing a special journal issue themed around Digital Decadence with Sandra Leonard. The projected publication date is December 2027, and the CFP is forthcoming.
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/neodec.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+<b>Journal article</b> in <i>Humanities</i>. Role: Author. <span style="color:#9899A6;">(Research)</span>
+
+</p>
+
+<p>
+   In 2026, I published a journal article titled <a href="https://www.mdpi.com/2076-0787/15/2/24">Global Neo-Decadence, Postcolonialism, and the Hyper-Digital Hysterical Sublime of Late Capitalism."</a> The article examines two short stories set in Iran and Peru in the <i>Neo-Decadence Evangelion</i> anthology. Both stories explore how late capitalism and digital technologies (such as online streaming culture) shape 21st century life after western imperialism—for better and for worse. 
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/jitp.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  <b>Journal Article </b> in <i>The Journal of Interactive Technology and Pedagogy (JITP).</i> Role: Author.<span style="color:#9899A6;">(Research)</span> <span style="color:#9899A6;">(Teaching)</span>
+
+</p>
+
+<p>
+
+  In 2020, I published <a href="https://cuny.manifoldapp.org/read/using-wikipedia-in-the-composition-classroom-and-beyond-encyclopedic-neutrality-social-inequality-and-failure-as-subversion-45a3041a-fad0-4b0e-be6b-4ffd0b5e161c/section/e20b9f01-9a17-4055-8d56-6b973d0973fd">Using Wikipedia in the Composition Classroom and Beyond: Encyclopedic “Neutrality,” Social Inequality, and Failure as Subversion,"</a> based on the Wikipedia Edit-A-Thons that I hosted for the students in my digital writing course at the University of Virginia. I focus in part on the racial politics shaping the competing narratives about how the university was founded under the direction of Thomas Jefferson. 
+
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/wiki.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  <b>Wikipedia Edit-A-Thon.</b> Role: Co-Organizer. <span style="color:#9899A6;">(Teaching)</span> <span style="color:#9899A6;">(Public Humanities)</span>
+</p>
+
+<p>
+  With Lane Rasberry (University of Virginia's Wikimedian in Residence), I co-organized two Edit-A-Thons in Fall 2019 and Spring 2020 for the students in the digital writing and composition course that I taught at the University of Virginia. <a href="https://outreachdashboard.wmflabs.org/courses/University_of_Virginia/Writing_About_Digital_Forms">The first event</a> asked students to conduct research and write entries on Wikipedia about Black history and culture in Virginia. <a href="https://outreachdashboard.wmflabs.org/courses/University_of_Virginia/Lost_Charlottesville/home"> The second </a>asked students to research and write entries about student activism in Virginia.
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/blackmirror.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  <b>Digital Writing and Composition Course.</b> Role: Instructor of Record. <span style="color:#9899A6;">(Teaching)</span>
+
+</p>
+
+<p>
+
+  In Fall 2019 and Spring 2020, I taught an ENWR 1510 Writing and Composition course at the University of Virginia, centered around the theme of digital writing. It focused on Instagram, Wikipedia, and the Netflix series <i>Black Mirror</i>. Final assignments: transforming personal essays into Instagram narratives or podcast episodes; conducting academic research to write accessible entries in Wikipedia Edit-A-Thons; close-reading analyses comparing ethical concerns around technology in <i>Black Mirror</i> episodes with critical theories about power and surveillance. 
+
+</p> 
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/artfeminism.jpg"
+alt="Digital Humanities Project">
+
+<p>
+    
+    <b>Art+Feminism WikiProject.</b> Role: Contributor. <span style="color:#9899A6;">(Research)</span> <span style="color:#9899A6;">(Public Humanities)</span>
+
+</p>
+
+<p>
+
+  In 2016, I participated in the <a href="https://artandfeminism.org/">Art+Feminism WikiProject</a> workshop at the Guggenheim Museum in New York City. The project focused on writing new entries about women artists on Wikipedia based on an exhibit at the museum. My Wikipedia user profile is <a href="https://en.wikipedia.org/wiki/User:Palimpsestic">Palimpsestic</a>. 
+
+</p>
+
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/cds.jpg"
+alt="Digital Humanities Project">
+
+<p>
+  
+  <b>New York University Center for Data Science (CDS).</b> Role: Content and Social Media Manager. <span style="color:#9899A6;">(Research)</span><span style="color:#9899A6;">(Public Humanities)</span>
+
+</p>
+
+
+<p>
+
+  From 2016-2018, I worked part-time and then full-time for CDS. I attended research seminars and read the faculty's published papers about AI and NLP (Natural Language Processing), and translated their research findings into accessible terms for communications teams at NYU as well as the public. I managed CDS's web content and its social media platforms (Facebook and Twitter) and supervised an undergraduate intern. 
+
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/michaelfield.jpg"
+alt="Digital Humanities Project">
+
+</a>
+
+<p>
+
+  <b>Michael Field Diaries Project. </b> Role: Lead Transcriber <span style="color:#9899A6;">(Research)</span>
+
+</p>
+
+<p>
+
+    In 2016, I transcribed and digitized 100 pages from a manuscript diary belonging to "Michael Field"—the shared pseudonym of two British and queer women poets in the 19th century, Katherine Bradley and Edith Cooper. I used TEI (Text Encoding Initiative - an XML language) to encode the transcriptions so that they are machine readable for the <i><a href="https://michaelfielddiary.dartmouth.edu">The Diaries of Michael Field</a></i> project.
+
+</p>
+
+</article>
+
+<article class="card">
+
+<div class="card-image">
+
+<img
+src="images/lofime.jpg"
+alt="Digital Humanities Project">
+
+<p>
+
+  <b>Web Design.</b> Role: Coder.
+
+</p>
+
+<p>
+
+  I like designing websites using HTML, CSS, and JavaScript. I see websites as expressive digital art forms in and of themselves, not merely containers for content. I have experience writing my own code and using CMS platforms such as WordPress, Omeka, SquareSpace, and Wix. I also have working knowledge of Python programming to write simple scripts. My GitHub repo for this website is here: <a href="https://github.com/cherriekwok">@cherriekwok</a>
+
+</p>
+
+</article>
+
+</section>
+
+</main>
+
+<footer class="container">
+
+    <div class="footer-left">
+
+        <p>
+            drcherriekwok@proton.me
+        </p>
+
+        <p>
+            © 2026 Cherrie Kwok
+        </p>
+
+    </div>
+
+    <div class="footer-right">
+
+        <a href="https://github.com/cherriekwok" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://bsky.app/profile/cherriekwok.bsky.social" aria-label="BlueSky">
+            <i class="fa-brands fa-bluesky"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/cherrie-kwok" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
