@@ -205,6 +205,8 @@ nav a{
     font-size:1.8rem;
 
     color:var(--text);
+    position:relative;
+    z-index:2000;
 }
 
 
